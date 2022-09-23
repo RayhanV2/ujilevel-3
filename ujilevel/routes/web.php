@@ -35,5 +35,5 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::get('/catatan', [UserController::class, 'showtable']);
 
-Route::get('/create-guru', [UserGuruController::class, 'create']);
-Route::post('/save-guru', [UserGuruController::class, 'store'])->name('simpan-catatan');
+Route::get('/create-catatan', [UserController::class, 'create']);
+Route::post('/save-catatan', [UserController::class, 'store'])->name('simpan-catatan');

@@ -26,7 +26,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        $datacatatan = User::all();
+        $datacatatan = catatan::all();
         return view('User.create', compact('datacatatan'));
     }
 
@@ -45,13 +45,13 @@ class UserController extends Controller
             'suhu_tubuh' => 'required',
         ]);
 
-        $data = User::create ([
+        $data = catatan::create ([
             'tanggal' => $request->tanggal,
             'waktu' => $request->waktu,
             'lokasi' => $request->lokasi,
             'suhu_tubuh' => $request->suhu_tubuh,
         ]);
-        return redirect('/user')->with('success','Data Berhasil Di Tambahkan');
+        return redirect('/catatan')->with('success','Data Berhasil Di Tambahkan');
     }
 
     /**

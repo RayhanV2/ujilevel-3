@@ -9,7 +9,6 @@
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success" role="alert">{{$message}}</div>
                     @endif
-                    <a href="{{url('create-agenda')}}" class="btn btn-success">Tambah</a>
 
                     <table class="table">
                         <thead>
@@ -19,7 +18,6 @@
                                 <th scope="col">waktu</th>
                                 <th scope="col">lokasi</th>
                                 <th scope="col">suhu_tubuh</th>
-                                <th scope="col">Option</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -36,6 +34,9 @@
                     </table>
                 </div>
             </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="{{url('create-catatan')}}" class="btn btn-success">Tambah</a>
+                    </div>
         </div>
     </div>
    
