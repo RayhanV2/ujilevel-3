@@ -3,9 +3,16 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-11">
-            <div class="card" style="width: 1100px">
+            <div class="card">
+                <div class="card-body d-flex ">
+                    <h4 style="margin-right: 20px;">Urutkan Berdasarkan</h4>
+                    <h5 style="padding: 5px; margin-right: 20px;" class="border border-secondary">Tanggal</h5>
+                    <a href="/sort" class="btn btn-outline-secondary">Urutkan</a>
+                </div>
+            </div>
+
+            <div class="card" >
                 <div class="card-body">
-                    <h1 class="text-center fw-10">User</h1>
                     @if ($message = Session::get('success'))
                         <div class="alert alert-success" role="alert">{{$message}}</div>
                     @endif

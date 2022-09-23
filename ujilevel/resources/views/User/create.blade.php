@@ -6,7 +6,7 @@
         <div class="col-8">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ route('simpan-catatan') }}" method="post" enctype="multipart/form-data">
+                    <form action="{{ route('simpan-catatan') }}" method="post">
                         {{ csrf_field() }}
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Tanggal</label>

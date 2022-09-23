@@ -19,6 +19,12 @@ class UserController extends Controller
         return view('User.show', compact('datacatatan'));
     }
 
+    public function sort()
+    {
+        $datacatatan = catatan::orderBy('tanggal','asc')->paginate(0);
+        return view('User.show', compact('datacatatan'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *

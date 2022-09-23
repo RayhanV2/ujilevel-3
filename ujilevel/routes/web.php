@@ -37,3 +37,6 @@ Route::get('/catatan', [UserController::class, 'showtable']);
 
 Route::get('/create-catatan', [UserController::class, 'create']);
 Route::post('/save-catatan', [UserController::class, 'store'])->name('simpan-catatan');
+
+
+Route::get('/sort', [UserController::class, 'sort'])->name('sort');
