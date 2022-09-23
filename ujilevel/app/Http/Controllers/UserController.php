@@ -3,14 +3,20 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\catatan;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function index()
     {
-        $datacatatan = User::all();
-        return view('User.dashboard', compact('datacatatan'));
+        return view('User.dashboard');
+    }
+
+    public function showtable()
+    {
+        $datacatatan = catatan::all();
+        return view('User.show', compact('datacatatan'));
     }
 
     /**
