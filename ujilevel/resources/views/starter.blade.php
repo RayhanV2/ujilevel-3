@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Starter</title>
+    <title>Peduli Diri</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -30,13 +30,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
+                    <a href="user" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Catatan Perjalanan</a>
+                    <a href="catatan" class="nav-link">Catatan Perjalanan</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Isi Data</a>
+                    <a href="create-catatan" class="nav-link">Isi Data</a>
                 </li>
             </ul>
 
@@ -55,7 +55,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="{{ url('admin') }}" class="brand-link">
-                <span class="brand-text font-weight-light">Project Catatan</span>
+                <span class="brand-text font-weight-light">Peduli Diri</span>
             </a>
 
             
@@ -68,13 +68,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Admin</a>
+                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
                     </div>
                 </div>
 
                 <!-- SidebarSearch Form -->
                 <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
+                    {{-- <div class="input-group" data-widget="sidebar-search">
                         <input class="form-control form-control-sidebar" type="search" placeholder="Search"
                             aria-label="Search">
                         <div class="input-group-append">
@@ -82,12 +82,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <i class="fas fa-search fa-fw"></i>
                             </button>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                    {{-- <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
@@ -118,7 +118,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Agenda</p>
                                     </a>
                                 </li>
-                            </ul>
+                            </ul> --}}
                 </nav>
                 <!-- /.sidebar-menu -->
             </div>
